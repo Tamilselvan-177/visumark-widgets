@@ -1,0 +1,15 @@
+{
+  "type": "simulation",
+  "badge": "LB",
+  "title": "Health Checks & Failover",
+  "idleHint": "Heartbeats run automatically. Fail a server to see traffic reroute and watch the repair animation.",
+  "allowFailure": true,
+  "maxServers": 5,
+  "algorithms": ["round_robin", "least_connections"],
+  "entities": [
+    { "id": "s1", "kind": "server", "label": "Server A" },
+    { "id": "s2", "kind": "server", "label": "Server B" },
+    { "id": "s3", "kind": "server", "label": "Server C" },
+    { "id": "s4", "kind": "server", "label": "Server D" }
+  ]
+}

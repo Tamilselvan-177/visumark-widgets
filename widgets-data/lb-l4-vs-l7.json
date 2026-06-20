@@ -1,0 +1,53 @@
+{
+  "type": "comparison",
+  "badge": "VS",
+  "title": "L4 vs L7 Load Balancing",
+  "left": {
+    "label": "L4 (Transport Layer)",
+    "description": "Routes purely on IP address and port — never looks inside the packet. Extremely fast, used by ChatGPT, Google, and other high-volume systems.",
+    "flow": [
+      {
+        "icon": "💻",
+        "label": "Client"
+      },
+      {
+        "icon": "📡",
+        "label": "L4 LB"
+      },
+      {
+        "icon": "🖥️",
+        "label": "Server"
+      }
+    ],
+    "traits": [
+      "Reads only IP + port",
+      "No content inspection",
+      "Very low latency",
+      "Can't do A/B testing or routing by URL"
+    ]
+  },
+  "right": {
+    "label": "L7 (Application Layer)",
+    "description": "Inspects the actual HTTP content — URLs, headers, cookies — before deciding where to route. Slower, but enables smart routing.",
+    "flow": [
+      {
+        "icon": "💻",
+        "label": "Client"
+      },
+      {
+        "icon": "🔍",
+        "label": "L7 LB"
+      },
+      {
+        "icon": "🖥️",
+        "label": "Server"
+      }
+    ],
+    "traits": [
+      "Reads URLs, headers, cookies",
+      "Enables A/B testing",
+      "Slightly higher latency",
+      "Needed for SSL termination + inspection"
+    ]
+  }
+}

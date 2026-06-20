@@ -1,0 +1,63 @@
+{
+  "title": "How DNS Resolution Works",
+  "badge": "DNS",
+  "nodes": [
+    {
+      "id": "client",
+      "icon": "💻",
+      "label": "Your Browser"
+    },
+    {
+      "id": "resolver",
+      "icon": "🔄",
+      "label": "Recursive Resolver"
+    },
+    {
+      "id": "root",
+      "icon": "🌐",
+      "label": "Root Nameserver"
+    },
+    {
+      "id": "tld",
+      "icon": "📂",
+      "label": ".com TLD Server"
+    },
+    {
+      "id": "auth",
+      "icon": "📋",
+      "label": "Authoritative NS"
+    }
+  ],
+  "steps": [
+    {
+      "activeNode": "client",
+      "arrow": null,
+      "log": "Browser checks cache: do I have <code>medium.com</code>? No."
+    },
+    {
+      "activeNode": "resolver",
+      "arrow": "a1",
+      "log": "Browser asks the Recursive Resolver: <em>What is medium.com?</em>"
+    },
+    {
+      "activeNode": "root",
+      "arrow": "a2",
+      "log": "Resolver asks a Root Nameserver: <em>Who handles .com?</em>"
+    },
+    {
+      "activeNode": "tld",
+      "arrow": "a3",
+      "log": "Root points to the .com TLD server."
+    },
+    {
+      "activeNode": "auth",
+      "arrow": "a4",
+      "log": "TLD server points to Medium’s Authoritative Nameserver."
+    },
+    {
+      "activeNode": "client",
+      "arrow": null,
+      "log": "IP returned: <code>medium.com → 162.159.152.4</code>. Browser connects!"
+    }
+  ]
+}

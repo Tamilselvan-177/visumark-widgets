@@ -1,0 +1,22 @@
+{
+  "DNS": {
+    "renderer": "step-flow-legacy",
+    "url": "widgets-data/dns.json"
+  },
+  "QUEUE": {
+    "renderer": "stack-pair-legacy",
+    "url": "widgets-data/queue.json"
+  },
+  "LB_ROUTING": {
+    "renderer": "simulation",
+    "url": "widgets-data/lb-routing.json"
+  },
+  "LB_HEALTHCHECK": {
+    "renderer": "simulation",
+    "url": "widgets-data/lb-healthcheck.json"
+  },
+  "LB_L4_VS_L7": {
+    "renderer": "comparison",
+    "url": "widgets-data/lb-l4-vs-l7.json"
+  }
+}
