@@ -1,0 +1,10 @@
+{
+  "type": "lbredundancy",
+  "badge": "HA",
+  "title": "Load Balancer Redundancy",
+  "idleHint": "Send traffic, then kill LB 1 and compare Active-Passive vs Active-Active failover.",
+  "entities": [
+    { "id": "s1", "kind": "server", "label": "Server A" },
+    { "id": "s2", "kind": "server", "label": "Server B" }
+  ]
+}

@@ -5,6 +5,7 @@
   "idleHint": "Heartbeats run automatically. Fail a server to see traffic reroute and watch the repair animation.",
   "allowFailure": true,
   "maxServers": 5,
+  "numClients": 2,
   "algorithms": ["round_robin", "least_connections"],
   "entities": [
     { "id": "s1", "kind": "server", "label": "Server A" },

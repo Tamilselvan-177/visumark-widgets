@@ -1,0 +1,53 @@
+{
+  "type": "comparison",
+  "badge": "DNS",
+  "title": "GeoDNS: Routing by Region",
+  "left": {
+    "label": "Without GeoDNS",
+    "description": "Every user worldwide is sent to the same single data center, no matter how far away it is. A user in Chennai and a user in Dubai both make the same long trip across the globe.",
+    "flow": [
+      {
+        "icon": "🌏",
+        "label": "Any User"
+      },
+      {
+        "icon": "✏️",
+        "label": "Standard DNS"
+      },
+      {
+        "icon": "🏢",
+        "label": "Single Data Center"
+      }
+    ],
+    "traits": [
+      "One fixed IP for everyone",
+      "Distant users pay a latency tax",
+      "Simple to set up",
+      "No resilience if that region goes down"
+    ]
+  },
+  "right": {
+    "label": "With GeoDNS",
+    "description": "DNS itself looks at where the request is coming from and replies with the IP of the nearest data center, before the load balancer is ever involved.",
+    "flow": [
+      {
+        "icon": "🌏",
+        "label": "Any User"
+      },
+      {
+        "icon": "📍",
+        "label": "GeoDNS"
+      },
+      {
+        "icon": "🏢",
+        "label": "Nearest Data Center"
+      }
+    ],
+    "traits": [
+      "Reply depends on requester location",
+      "Lower latency for distant users",
+      "Acts as the first traffic cop, before any load balancer",
+      "One region down → reroute to the next nearest"
+    ]
+  }
+}

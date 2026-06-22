@@ -1,0 +1,13 @@
+{
+  "type": "hashring",
+  "badge": "HASH",
+  "title": "Consistent Hashing",
+  "idleHint": "Try RING vs MOD-N, then add or remove a server and compare how many keys remap.",
+  "numKeys": 8,
+  "maxServers": 6,
+  "entities": [
+    { "id": "srv-alpha", "kind": "server", "label": "Server 1" },
+    { "id": "srv-beta", "kind": "server", "label": "Server 2" },
+    { "id": "srv-gamma", "kind": "server", "label": "Server 3" }
+  ]
+}

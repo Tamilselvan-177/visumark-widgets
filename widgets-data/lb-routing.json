@@ -2,9 +2,10 @@
   "type": "simulation",
   "badge": "LB",
   "title": "Load Balancing Algorithms",
-  "idleHint": "Pick an algorithm, then send requests and watch how traffic is distributed.",
+  "idleHint": "Pick a client, pick an algorithm, then send requests and watch how traffic is distributed.",
   "allowFailure": false,
   "maxServers": 5,
+  "numClients": 3,
   "algorithms": ["round_robin", "weighted_round_robin", "least_connections", "ip_hash", "random"],
   "entities": [
     { "id": "s1", "kind": "server", "label": "Server A", "weight": 1 },

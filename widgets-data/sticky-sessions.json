@@ -1,0 +1,11 @@
+{
+  "type": "sessions",
+  "badge": "SESS",
+  "title": "Sticky Sessions vs Shared Redis Store",
+  "idleHint": "Log in, then kill the server holding the session and compare what happens.",
+  "entities": [
+    { "id": "s1", "kind": "server", "label": "Server A" },
+    { "id": "s2", "kind": "server", "label": "Server B" },
+    { "id": "s3", "kind": "server", "label": "Server C" }
+  ]
+}
