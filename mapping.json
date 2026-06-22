@@ -18,5 +18,21 @@
   "LB_L4_VS_L7": {
     "renderer": "comparison",
     "url": "widgets-data/lb-l4-vs-l7.json"
+  },
+  "CONSISTENT_HASHING": {
+    "renderer": "hashring",
+    "url": "widgets-data/consistent-hashing.json"
+  },
+  "LB_REDUNDANCY": {
+    "renderer": "lbredundancy",
+    "url": "widgets-data/lb-redundancy.json"
+  },
+  "STICKY_SESSIONS": {
+    "renderer": "sessions",
+    "url": "widgets-data/sticky-sessions.json"
+  },
+  "GEO_DNS": {
+    "renderer": "comparison",
+    "url": "widgets-data/geo-dns.json"
   }
 }
